@@ -4,44 +4,20 @@ const projects = [
     title: 'Cuality Team',
     description:
       'Explora Cuality Team: tu biblioteca virtual de videojuegos, similar a Steam. Encuentra títulos únicos como Fall of the Gods, un juego de pixel art 2D ambientado en la mitología griega, creado por nuestra propia empresa. ¡Sumérgete en mundos épicos y descubre juegos extraordinarios!',
-    imageUrl: 'https://contextoportfolio.netlify.app/projects/CualityTeam.webp',
-    pageUrl: '/project1'
+    imageUrl: '/CualityTeam.webp',
+    pageUrl: 'https://cualityteam.netlify.app/'
   },
   {
-    title: 'Cuality Team',
+    title: 'Pretty Woman',
     description:
-      'Explora Cuality Team: tu biblioteca virtual de videojuegos, similar a Steam. Encuentra títulos únicos como Fall of the Gods, un juego de pixel art 2D ambientado en la mitología griega, creado por nuestra propia empresa. ¡Sumérgete en mundos épicos y descubre juegos extraordinarios!',
-    imageUrl: 'https://contextoportfolio.netlify.app/projects/CualityTeam.webp',
-    pageUrl: '/project2'
+      '¡Libera tu potencial con la Agencia Pretty Woman! Dile adiós al estrés laboral y las complicaciones de encontrar el trabajo perfecto; estamos aquí para simplificar el proceso. Nuestra misión es conectar tus habilidades únicas con las oportunidades laborales que te inspiren y te motiven a alcanzar tus metas profesionales.',
+    imageUrl: '/PrettyWomanIMG.webp',
+    pageUrl: 'https://prettywomanagencia.com/'
   }
   // Add more projects as needed
 ]
 ---
 
-<!-- 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {
-    projects.map((project) => (
-      <div class="relative group">
-        <img
-          src={project.imageUrl}
-          alt={project.title}
-          class="w-full h-64 object-cover rounded-lg shadow-md"
-        />
-        <div class="absolute inset-0 -bg-color-primary bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4 rounded-lg">
-          <h3 class="text-lg font-bold mb-2">{project.title}</h3>
-          <p class="mb-4">{project.description}</p>
-          <a
-            href={project.pageUrl}
-            class="-bg-color-primary hover:-bg-color-tertiary text-white font-bold py-2 px-4 rounded"
-          >
-            View Page
-          </a>
-        </div>
-      </div>
-    ))
-  }
-</div> -->
 <div class="space-y-8 mt-10 w-4/5 mx-auto">
   {
     projects.map((project) => (
