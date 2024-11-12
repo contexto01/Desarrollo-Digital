@@ -1,31 +1,33 @@
 ---
-
+const LINKS = [
+  { href: '/#Servicios', text: 'Servicios' },
+  { href: '/#Projectos', text: 'Projectos' },
+  { href: '/#Contacto', text: 'Contacto' }
+]
 ---
 
 <header class="-bg-color-primary flex justify-center p-4">
   <nav class="container flex justify-center w-full">
     <ul class="flex space-x-4">
-      <li>
+      <!-- <li>
         <a
           href="/"
           class="-text-color-secondary hover:-text-color-tertiary hover:border-b-2 hover:-border-b-color-tertiary transition-all"
-          >Inicio</a
+          >Servicios</a
         >
-      </li>
-      <li>
-        <a
-          href="/acerca-de"
-          class="-text-color-secondary hover:-text-color-tertiary hover:border-b-2 hover:-border-b-color-tertiary transition-all"
-          >Acerca de</a
-        >
-      </li>
-      <li>
-        <a
-          href="/contacto"
-          class="-text-color-secondary hover:-text-color-tertiary hover:border-b-2 hover:-border-b-color-tertiary transition-all"
-          >Contacto</a
-        >
-      </li>
+      </li> -->
+      {
+        LINKS.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class="-text-color-secondary hover:-text-color-tertiary hover:border-b-2 hover:-border-b-color-tertiary transition-all"
+            >
+              {link.text}
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </header>

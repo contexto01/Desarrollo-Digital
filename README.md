@@ -1,54 +1,30 @@
-# Astro Starter Kit: Basics
+# Desarrollo Digital
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido a **Desarrollo Digital**, tu aliado en la creación de sitios web y el impulso de tu negocio.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## ¿Quiénes somos?
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+En Desarrollo Digital, nos especializamos en el diseño y desarrollo de sitios web personalizados que se adaptan a las necesidades específicas de tu negocio. Nuestro objetivo es ayudarte a tener una presencia en línea efectiva y profesional.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## ¿Qué ofrecemos?
 
-## 🚀 Project Structure
+- **Diseño Web Personalizado**: Creamos sitios web únicos y atractivos que reflejan la identidad de tu marca.
+- **Desarrollo Web**: Utilizamos las últimas tecnologías para desarrollar sitios web funcionales y responsivos.
+- **SEO y Marketing Digital**: Te ayudamos a mejorar tu visibilidad en los motores de búsqueda y a atraer más clientes potenciales.
+- **Mantenimiento y Soporte**: Ofrecemos servicios de mantenimiento y soporte continuo para asegurar que tu sitio web siempre esté en óptimas condiciones.
 
-Inside of your Astro project, you'll see the following folders and files:
+## ¿Por qué elegirnos?
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Experiencia**: Contamos con un equipo de profesionales con amplia experiencia en el desarrollo web.
+- **Calidad**: Nos comprometemos a entregar productos de alta calidad que superen tus expectativas.
+- **Atención Personalizada**: Trabajamos de cerca contigo para entender tus necesidades y ofrecer soluciones a medida.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Contáctanos
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Si estás listo para llevar tu negocio al siguiente nivel, no dudes en contactarnos:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- **Email**: Desarrollo Digital
+- **Teléfono**: +57 3025173242
+- **Dirección**: Cali, Colombia 🇨🇴
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+¡Esperamos trabajar contigo!

@@ -4,11 +4,12 @@ import Computer from '../components/icons/Computer.astro'
 import WebDesing from '../components/icons/WebDesing.astro'
 import Services from '../components/Services.astro'
 import Projects from '../components/Projects.astro'
+import ContactForm from '../components/ContactForm.astro'
 ---
 
 <Layout title="Desarrollo Digital">
   <main
-    class="flex justify-center gap-x-4 flex-col-reverse items-center sm:flex-row mb-10 sm:mb-0 px-4 xl:px-0"
+    class="flex justify-center gap-x-4 flex-col-reverse items-center sm:flex-row mb-10 sm:mb-0 xl:px-0"
   >
     <div class="flex flex-col justify-center items-center sm:items-start gap-y-4 max-w-lg">
       <h1
@@ -21,7 +22,7 @@ import Projects from '../components/Projects.astro'
         digital a la medida.
       </p>
       <a
-        class="p-4 text-xl font-medium w-fit rounded -bg-color-tertiary transition-colors hover:-bg-color-secondary hover:-text-color-primary bg-opacity-80"
+        class="p-4 text-xl font-medium w-fit rounded -bg-color-tertiary transition-colors hover:-bg-color-secondary hover:-text-color-primary bg-opacity-60"
         href="https://wa.me/573025173242"
         target="_blank"
       >
@@ -31,6 +32,6 @@ import Projects from '../components/Projects.astro'
     <WebDesing class="min-w-72 w-1/2 h-auto -text-color-primary" />
   </main>
   <Services />
-  <h2 class="text-4xl font-medium text-center mt-12">Proyectos Destacados</h2>
   <Projects />
+  <ContactForm />
 </Layout>

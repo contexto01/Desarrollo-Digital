@@ -26,7 +26,7 @@ const { title } = Astro.props
       name="keywords"
       content="soluciones digitales, páginas web, desarrollo web, impulsar negocio, contacto"
     />
-    <meta name="author" content="Tu Nombre o Empresa" />
+    <meta name="author" content="Desarrollo Digital" />
     <meta property="og:title" content={title} />
     <meta
       property="og:description"
@@ -34,14 +34,20 @@ const { title } = Astro.props
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://desarrollodigital.netlify.app/" />
-    <meta property="og:image" content="/Desarrollo_Digital.png" />
+    <meta
+      property="og:image"
+      content="https://desarrollodigital.netlify.app/Desarrollo_Digital.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta
       name="twitter:description"
       content="Una página que te brinda soluciones digitales por medio de páginas web. Contáctanos para obtener una página web y así impulsar tu negocio."
     />
-    <meta name="twitter:image" content="/Desarrollo_Digital.png" />
+    <meta
+      name="twitter:image"
+      content="https://desarrollodigital.netlify.app/Desarrollo_Digital.png"
+    />
     <title>{title}</title>
   </head>
   <body>
@@ -56,6 +62,13 @@ const { title } = Astro.props
     h2,
     h3 {
       font-family: 'Anton', sans-serif;
+    }
+
+    h2,
+    h3 {
+      font-size: 2.25rem /* 36px */;
+      line-height: 2.5rem /* 40px */;
+      font-weight: 500;
     }
 
     body::-webkit-scrollbar {
@@ -76,7 +89,9 @@ const { title } = Astro.props
       max-width: 1200px;
       margin: 0 auto;
       @apply -text-color-secondary;
+      padding: 0 1rem;
     }
+    scroll-behavior: smooth;
     @apply -bg-color-primary;
   }
 </style>
