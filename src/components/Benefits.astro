@@ -1,0 +1,85 @@
+---
+import Browser from './icons/Browser.astro'
+import Hours24 from './icons/Hours24.astro'
+import Rocket from './icons/Rocket.astro'
+import Seo from './icons/Seo.astro'
+---
+
+<section>
+  <h2 class="text-center">¿Por Qué Elegirnos para Tu Proyecto Digital?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Artículo 1: Entrega Rápida -->
+    <article
+      class="bg-color-tertiary p-6 rounded-lg shadow-md flex items-center flex-wrap sm:flex-nowrap gap-y-2"
+    >
+      <div class="icon-placeholder mr-4">
+        <Rocket class="size-10" />
+      </div>
+      <div>
+        <h3 class="text-lg">Entrega Rápida y Eficiente</h3>
+        <p>
+          Nos comprometemos con la implementación ágil y la entrega de proyectos a tiempo, sin
+          sacrificar la calidad. Tu sitio web o aplicación estará listo en menos tiempo del que
+          imaginas.
+        </p>
+      </div>
+    </article>
+
+    <!-- Artículo 2: Soporte Técnico 24/7 -->
+    <article
+      class="bg-color-secondary p-6 rounded-lg shadow-md flex items-center flex-wrap sm:flex-nowrap gap-y-2"
+    >
+      <div class="icon-placeholder mr-4">
+        <Hours24 class="size-10" />
+      </div>
+      <div>
+        <h3 class="text-lg">Soporte Técnico 24/7</h3>
+        <p>
+          Obtén asistencia continua, antes, durante y después del lanzamiento de tu proyecto.
+          Nuestro soporte técnico 24/7 te asegura tranquilidad y resolución rápida de cualquier
+          inconveniente.
+        </p>
+      </div>
+    </article>
+
+    <!-- Artículo 3: SEO Optimizado -->
+    <article
+      class="bg-color-primary p-6 rounded-lg shadow-md flex items-center flex-wrap sm:flex-nowrap gap-y-2"
+    >
+      <div class="icon-placeholder mr-4">
+        <Seo class="size-10" />
+      </div>
+      <div>
+        <h3 class="text-lg">SEO Optimizado para Resultados Reales</h3>
+        <p>
+          Implementamos estrategias de optimización SEO efectivas para asegurar que tu sitio
+          web se posicione entre los primeros resultados de los motores de búsqueda. Atrae más
+          tráfico y potenciales clientes.
+        </p>
+      </div>
+    </article>
+
+    <!-- Artículo 4: Diseño Responsivo -->
+    <article
+      class="bg-color-tertiary p-6 rounded-lg shadow-md flex items-center flex-wrap sm:flex-nowrap gap-y-2"
+    >
+      <div class="icon-placeholder mr-4">
+        <Browser class="size-10" />
+      </div>
+      <div>
+        <h3 class="text-lg">Diseño Web Responsivo y Adaptable</h3>
+        <p>
+          Tu sitio se verá perfecto en cualquier dispositivo. Ofrecemos diseño web responsivo
+          para asegurar una experiencia de usuario excepcional en móviles, tablets y
+          escritorios.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  .icon-placeholder {
+    @apply p-2 -bg-color-tertiary bg-opacity-50 rounded-full flex items-center justify-center;
+  }
+</style>
