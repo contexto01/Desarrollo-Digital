@@ -1,13 +1,43 @@
 ---
+import Facebook from './icons/Facebook.astro'
+import Instagram from './icons/Instagram.astro'
+import Tiktok from './icons/Tiktok.astro'
+import Youtube from './icons/Youtube.astro'
+
 const currentYear = new Date().getFullYear()
 ---
 
 <footer
-  class="-text-color-secondary py-4 gap-y-2 text-xs text-pretty flex justify-between flex-wrap text-neutral-700 mt-10"
+  class="-text-color-secondary py-4 gap-y-2 text-xs text-pretty flex justify-between items-center flex-wrap text-neutral-700 mt-10"
 >
   <span class="mr-4">
     © {currentYear}
-    <a href="https://github.com/contexto01" target="_blank">Daniel(@contexto01)</a> Todos los derechos
-    reservados.
+    <a
+      href="https://github.com/contexto01"
+      class="hover:-text-color-tertiary transition-colors"
+      target="_blank">Daniel(@contexto01)</a
+    > Todos los derechos reservados.
   </span>
+  <ul class="flex gap-x-4">
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=61568309072023" target="_blank">
+        <Facebook class="size-6 hover:-text-color-tertiary transition-colors" />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/" target="_blank">
+        <Instagram class="size-6 hover:-text-color-tertiary transition-colors" />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.tiktok.com/@_desarrollodigital" target="_blank">
+        <Tiktok class="size-6 hover:-text-color-tertiary transition-colors" />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/channel/UC8lozlNM3S7uSnsKX-_FZaA" target="_blank">
+        <Youtube class="size-6 hover:-text-color-tertiary transition-colors" />
+      </a>
+    </li>
+  </ul>
 </footer>
