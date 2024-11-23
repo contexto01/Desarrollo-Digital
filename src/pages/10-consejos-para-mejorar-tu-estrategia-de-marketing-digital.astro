@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const Nextyear = new Date().getFullYear() + 1
+
+const consejos = [
+  {
+    titulo: 'Define tus objetivos claros',
+    descripcion:
+      'Para desarrollar una estrategia de marketing digital efectiva, es crucial definir objetivos específicos, medibles, alcanzables, relevantes y con límite de tiempo (SMART). Estos objetivos guiarán todas tus acciones y te permitirán evaluar el rendimiento de tus campañas de forma efectiva.'
+  },
+  {
+    titulo: 'Conoce a tu audiencia',
+    descripcion:
+      'Es esencial comprender quiénes son tus clientes ideales. Investiga su demografía, comportamientos, intereses y necesidades. Esta información te ayudará a crear contenido relevante y a elegir las plataformas adecuadas para llegar a ellos.'
+  },
+  {
+    titulo: 'Optimiza tu presencia en redes sociales',
+    descripcion:
+      'Las redes sociales son herramientas clave en cualquier estrategia de marketing digital. Asegúrate de estar presente en las plataformas donde tu audiencia pasa más tiempo. Además, mantén una presencia activa y atractiva, creando contenido que fomente la interacción y el compromiso.'
+  },
+  {
+    titulo: 'Crea contenido valioso y relevante',
+    descripcion:
+      'El contenido es el rey en el marketing digital. Ya sea a través de blogs, videos, infografías o publicaciones en redes sociales, asegúrate de que el contenido que crees aporte valor a tu audiencia. Esto no solo atraerá tráfico, sino que también fomentará la lealtad de los usuarios.'
+  },
+  {
+    titulo: 'Aprovecha el poder del SEO',
+    descripcion:
+      'El SEO (Search Engine Optimization) es crucial para aumentar la visibilidad de tu sitio web en los motores de búsqueda. Optimiza tus páginas y contenido con palabras clave relevantes, utiliza enlaces internos y asegúrate de que tu sitio sea rápido y fácil de navegar para mejorar tu posicionamiento.'
+  },
+  {
+    titulo: 'Utiliza la automatización de marketing',
+    descripcion:
+      'La automatización de marketing te permite mejorar la eficiencia de tu estrategia, ahorrando tiempo y recursos. Herramientas de automatización como el correo electrónico, las respuestas automáticas y la programación de publicaciones en redes sociales te permiten mantener una comunicación constante con tu audiencia.'
+  },
+  {
+    titulo: 'Implementa estrategias de marketing de influencia',
+    descripcion:
+      'El marketing de influencia sigue siendo una de las tácticas más efectivas para llegar a nuevas audiencias. Colaborar con personas influyentes en tu nicho puede aumentar la credibilidad de tu marca y expandir su alcance de manera significativa.'
+  },
+  {
+    titulo: 'Mide y ajusta tu rendimiento',
+    descripcion:
+      'El análisis de datos es fundamental para comprender el impacto de tus esfuerzos de marketing. Usa herramientas como Google Analytics, las métricas de redes sociales y otras plataformas para monitorear el rendimiento de tus campañas y ajustarlas en tiempo real para mejorar los resultados.'
+  },
+  {
+    titulo: 'Enfócate en la experiencia del usuario',
+    descripcion:
+      'Una experiencia de usuario positiva es clave para retener a tus visitantes y convertirlos en clientes. Asegúrate de que tu sitio web sea fácil de navegar, rápido y móvil-friendly. La UX (experiencia de usuario) debe ser una prioridad en cualquier estrategia de marketing digital.'
+  },
+  {
+    titulo: 'Aprovecha el marketing de contenido interactivo',
+    descripcion:
+      'El contenido interactivo, como encuestas, cuestionarios, calculadoras y otros formatos, atrae a los usuarios de manera divertida y atractiva. Estos formatos no solo aumentan el compromiso, sino que también proporcionan datos valiosos sobre las preferencias de tu audiencia.'
+  }
+]
+---
+
+<Layout title="10 Consejos para Mejorar tu Estrategia de Marketing Digital">
+  <main class="bg--color-primary text--color-secondary min-h-screen py-10 px-4">
+    <!-- Título principal -->
+    <section class="max-w-4xl mx-auto text-center mb-12">
+      <h1 class="text-pretty text-4xl mb-6">
+        10 Consejos para Mejorar tu Estrategia de Marketing Digital
+      </h1>
+      <p class="text-lg leading-relaxed">
+        Descubre los mejores consejos para optimizar tu estrategia de marketing digital y
+        llevar tu negocio al siguiente nivel. Estos consejos te ayudarán a aumentar tu
+        visibilidad, mejorar la conversión y fortalecer tu marca.
+      </p>
+    </section>
+
+    <!-- Imagen principal -->
+    <section class="max-w-4xl mx-auto mb-8">
+      <img
+        src="/DigitalMarketing.jpeg"
+        alt="Consejos para marketing digital"
+        class="rounded-lg w-full max-h-96 object-cover shadow-lg"
+      />
+    </section>
+
+    <!-- Sección de consejos -->
+    <section class="max-w-4xl mx-auto">
+      {
+        consejos.map((consejo, index) => (
+          <article class="bg--color-secondary rounded-lg p-6 shadow-md">
+            <h2 class="text--color-primary text-2xl mb-2">{consejo.titulo}</h2>
+            <p class="text-base leading-relaxed text--color-primary">{consejo.descripcion}</p>
+          </article>
+        ))
+      }
+    </section>
+  </main>
+</Layout>

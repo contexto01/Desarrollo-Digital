@@ -1,0 +1,95 @@
+---
+const blogPosts = [
+  {
+    title: `10 Tendencias de Diseño Web para ${new Date().getFullYear() + 1}`,
+    category: 'Tutorial',
+    description: 'Descubre las últimas tendencias en diseño web que dominarán este año...',
+    img: '/TendenciasDiseñoWeb.jpeg',
+    date: '14 dias despues',
+    link: '/10-tendencias-de-diseño-web'
+  },
+  {
+    title: 'Guía Completa de SEO para Principiantes',
+    category: 'SEO',
+    description:
+      'Aprende a optimizar tu sitio web para los motores de búsqueda y atraer más tráfico...',
+    img: '/SeoImg.jpeg',
+    date: '1 mes despues',
+    link: '/Guia-para-seo'
+  },
+  {
+    title: `Cómo Crear un Blog Exitoso en ${new Date().getFullYear() + 1}`,
+    category: 'Marketing',
+    description: 'Descubre cómo crear un blog exitoso y atraer a tu audiencia ideal...',
+    img: '/SuccessfulBlog.jpeg',
+    date: '2 meses despues',
+    link: '/Como-crear-un-blog-exitoso'
+  },
+  {
+    title: '10 Consejos para Mejorar tu Estrategia de Marketing Digital',
+    category: 'Marketing',
+    description:
+      'Descubre cómo mejorar tu estrategia de marketing digital y atraer a más clientes...',
+    img: '/DigitalMarketing.jpeg',
+    date: '3 meses despues'
+  }
+]
+console.log(blogPosts[2].title)
+---
+
+<section class="bg-white dark:bg-gray-900">
+  <div class="px-4 py-4 mx-auto max-w-screen-xl lg:px-6">
+    <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+      <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight text-gray-900 dark:text-white">
+        Blog y Recursos
+      </h2>
+      <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+        Encuentra los mejores recursos y tutoriales para mejorar tus habilidades de diseño y
+        desarrollo web.
+      </p>
+    </div>
+    <div class="grid gap-8 lg:grid-cols-2">
+      {
+        blogPosts.map((post) => (
+          <article class="p-6 -bg-color-secondary bg-opacity-5 rounded-lg border -border-color-tertiary border-opacity-20 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex justify-between items-center mb-5 -text-color-secondary">
+              <span class="-bg-color-tertiary bg-opacity-50 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                <svg
+                  class="mr-1 w-3 h-3"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                </svg>
+                {post.category}
+              </span>
+              <span class="text-sm">{post.date}</span>
+            </div>
+            <img
+              class="mb-5 rounded-lg max-h-40 w-full object-cover"
+              src={post.img}
+              alt="Tendencias de Diseño Web"
+            />
+            <h2 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">
+              <a href={post.link}>{post.title}</a>
+            </h2>
+            <p class="mb-5 font-light text-gray-500 dark:text-gray-400">{post.description}</p>
+            <div class="flex justify-between items-center">
+              {/* <div class="flex items-center space-x-4">
+                <img class="w-7 h-7 rounded-full" src={post.avatar} alt="Jese Leos avatar" />
+                <span class="font-medium dark:text-white"> {post.author} </span>
+              </div> */}
+              <a
+                href={post.link}
+                class="inline-flex items-center font-medium -text-color-tertiary dark:text-primary-500 hover:underline"
+              >
+                Read more ->{' '}
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

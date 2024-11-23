@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const Nextyear = new Date().getFullYear() + 1
+
+const tendencias = [
+  {
+    titulo: 'Diseños minimalistas con colores monocromáticos',
+    descripcion:
+      'El diseño web minimalista sigue siendo tendencia en 2025, con un enfoque en colores monocromáticos que mejoran la estética y la experiencia de usuario. Este estilo de diseño no solo reduce la carga visual, sino que también mejora la velocidad de carga de las páginas web, un factor clave para el SEO. Al eliminar elementos innecesarios y centrarse en un diseño limpio, los sitios web logran captar la atención del usuario y reducir la tasa de rebote.'
+  },
+  {
+    titulo: 'Tipografías personalizadas para branding efectivo',
+    descripcion:
+      'Las tipografías exclusivas están redefiniendo las estrategias de branding en el diseño web. Usar fuentes personalizadas ayuda a destacar entre la competencia, mejorar el reconocimiento de marca y aumentar la duración de las visitas. Este tipo de diseño también es clave para la optimización en motores de búsqueda, ya que genera una experiencia de usuario atractiva que fomenta la interacción y disminuye la tasa de salida del sitio.'
+  },
+  {
+    titulo: 'Microinteracciones para mejorar la experiencia del usuario',
+    descripcion:
+      'Las microinteracciones son elementos clave en la optimización de la experiencia de usuario (UX). Al incluir animaciones interactivas en botones, formularios o menús, los diseñadores mejoran la navegabilidad del sitio. Esto no solo aumenta la satisfacción del usuario, sino que también impulsa métricas importantes de SEO, como el tiempo en página y las conversiones.'
+  },
+  {
+    titulo: 'Modos oscuros y claros para una experiencia personalizada',
+    descripcion:
+      'El diseño web adaptable a modos oscuros y claros sigue ganando popularidad, especialmente entre los usuarios que buscan opciones personalizadas. Este enfoque mejora la accesibilidad y la retención de usuarios, dos factores que influyen directamente en el SEO. Los sitios que ofrecen esta funcionalidad suelen tener mejores tasas de interacción y una experiencia visual optimizada para cualquier dispositivo o entorno.'
+  },
+  {
+    titulo: 'Diseños inclusivos y accesibles para un mayor alcance',
+    descripcion:
+      'La accesibilidad es esencial en el diseño web moderno, permitiendo que las páginas sean funcionales para todas las personas, incluidas aquellas con discapacidades. Un sitio accesible mejora su clasificación en motores de búsqueda al cumplir con las pautas de accesibilidad web (WCAG), lo que resulta en una mejor experiencia de usuario, tiempos de permanencia más largos y un mayor alcance global.'
+  },
+  {
+    titulo: 'Animaciones SVG optimizadas para el rendimiento',
+    descripcion:
+      'Los gráficos vectoriales escalables (SVG) son fundamentales para mejorar el diseño visual sin afectar la velocidad de carga, un factor clave para el SEO. Las animaciones SVG, como logotipos dinámicos y transiciones interactivas, no solo captan la atención del usuario, sino que también mejoran la experiencia en dispositivos móviles, lo que aumenta la clasificación en motores de búsqueda.'
+  },
+  {
+    titulo: 'Desplazamiento interactivo para páginas web dinámicas',
+    descripcion:
+      'Las animaciones impulsadas por el desplazamiento, como el efecto parallax, transforman las páginas web en experiencias inmersivas. Este tipo de diseño dinámico aumenta el tiempo en página y fomenta la exploración del contenido, dos métricas importantes para el SEO. Además, las animaciones interactivas mejoran la navegación intuitiva, guiando a los usuarios hacia las secciones más relevantes del sitio.'
+  },
+  {
+    titulo: 'Interfaces con inteligencia artificial para una experiencia personalizada',
+    descripcion:
+      'La integración de inteligencia artificial en sitios web está redefiniendo la personalización de la experiencia del usuario. Herramientas como chatbots, recomendaciones inteligentes y personalización de contenido ayudan a aumentar las tasas de conversión y mejorar la interacción del usuario. Este enfoque optimizado para SEO asegura una mayor retención de visitantes y un impacto positivo en las métricas de usabilidad.'
+  },
+  {
+    titulo: 'Transiciones fluidas entre páginas para un diseño envolvente',
+    descripcion:
+      'Las transiciones suaves entre páginas mejoran la navegabilidad y reducen la frustración del usuario, factores críticos para el SEO. Al eliminar interrupciones bruscas y proporcionar una experiencia visual continua, estas transiciones aumentan la retención de usuarios y disminuyen la tasa de rebote, contribuyendo al éxito del posicionamiento en motores de búsqueda.'
+  },
+  {
+    titulo: 'Componentes web modulares para diseños escalables',
+    descripcion:
+      'Los componentes reutilizables son fundamentales en el diseño web eficiente y escalable. Este enfoque mejora la consistencia y simplifica el mantenimiento, lo que resulta en una mejor experiencia de usuario y tiempos de carga más rápidos. Ambos factores tienen un impacto positivo en las clasificaciones de SEO, ya que los motores de búsqueda priorizan sitios rápidos y fáciles de usar.'
+  }
+]
+---
+
+<Layout title=`10 tendencias para diseño web para ${Nextyear}`>
+  <main class="bg--color-primary text--color-secondary min-h-screen py-10 px-4">
+    <!-- Título principal -->
+    <section class="max-w-4xl mx-auto text-center mb-12">
+      <h1 class="text-pretty text-4xl mb-6">
+        10 Tendencias de Diseño Web para <span id="next-year">{Nextyear}</span>
+      </h1>
+      <p class="text-lg leading-relaxed">
+        Descubre las tendencias más importantes que marcarán el diseño web en el próximo año.
+        Estas ideas revolucionarán la forma en que experimentamos la web.
+      </p>
+    </section>
+    <!-- Imagen principal -->
+
+    <section class="max-w-4xl mx-auto mb-8">
+      <img
+        src="/TendenciasDiseñoWeb.jpeg"
+        alt="Tendencias de diseño web 2025"
+        class="rounded-lg w-full max-h-96 object-cover shadow-lg"
+      />
+    </section>
+
+    <!-- Sección de tendencias -->
+    <section class="max-w-4xl mx-auto">
+      {
+        tendencias.map((tendencia, index) => (
+          <article class="bg--color-secondary rounded-lg p-6 shadow-md">
+            <h2 class="text--color-primary text-2xl mb-2">{tendencia.titulo}</h2>
+            <p class="text-base leading-relaxed text--color-primary">
+              {tendencia.descripcion}
+            </p>
+          </article>
+        ))
+      }
+    </section>
+  </main>
+</Layout>
