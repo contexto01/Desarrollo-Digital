@@ -61,21 +61,6 @@ const { title } = Astro.props
     <Footer />
   </body>
 </html>
-<script>
-  function loadScript(callback) {
-    var head = document.getElementsByTagName('head')[0]
-    var script = document.createElement('script')
-    script.type = 'text/javascript'
-    script.src = 'https://tracker.metricool.com/resources/be.js'
-    script.onreadystatechange = callback
-    script.onload = callback
-    head.appendChild(script)
-  }
-
-  loadScript(function () {
-    beTracker.t({ hash: '4fafa7f91d539302cc67e88dea22773f' })
-  })
-</script>
 <style is:global>
   html {
     h1,
