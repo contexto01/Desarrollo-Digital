@@ -71,10 +71,12 @@ const { title } = Astro.props
       })
     </script>
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <!-- <Header /> -->
     <NavBar />
-    <slot />
+    <main class="flex-grow">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
