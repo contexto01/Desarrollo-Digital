@@ -6,10 +6,18 @@ import World from './icons/World.astro'
 
 <section id="Servicios">
   <div class="container mx-auto">
-    <h2 class="text-center mb-12">Nuestros Servicios</h2>
+    <div class="max-w-screen-md text-pretty mb-8 lg:mb-12">
+      <h2 class="mb-4 text-4xl tracking-tight">🌟 Nuestros Servicios</h2>
+      <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+        Te ayudamos a transformar tu visión en realidad con servicios digitales de alta calidad
+        y soluciones a medida.
+      </p>
+    </div>
     <div class="grid md:grid-cols-3 gap-8">
       <div
-        class="-bg-color-secondary border -border-color-tertiary border-opacity-20 bg-opacity-5 rounded p-6"
+        class="-bg-color-secondary bg-opacity-5 rounded p-6 shadow -shadow-color-tertiary"
+        data-aos="fade-up"
+        data-aos-delay="50"
       >
         <Code class="-text-color-tertiary size-20 mb-4" />
         <h3 class="text-3xl mb-2">Desarrollo Web</h3>
@@ -19,7 +27,9 @@ import World from './icons/World.astro'
         </p>
       </div>
       <div
-        class="-bg-color-secondary border -border-color-tertiary border-opacity-20 bg-opacity-5 rounded p-6"
+        class="-bg-color-secondary shadow -shadow-color-tertiary bg-opacity-5 rounded p-6"
+        data-aos="fade-up"
+        data-aos-delay="100"
       >
         <Search class="-text-color-tertiary size-20 mb-4" />
         <h3 class="text-3xl mb-2">SEO</h3>
@@ -29,7 +39,9 @@ import World from './icons/World.astro'
         </p>
       </div>
       <div
-        class="-bg-color-secondary border -border-color-tertiary border-opacity-20 bg-opacity-5 rounded p-6"
+        class="-bg-color-secondary shadow -shadow-color-tertiary bg-opacity-5 rounded p-6"
+        data-aos="fade-up"
+        data-aos-delay="150"
       >
         <World class="-text-color-tertiary size-20 mb-4" />
         <h3 class="text-3xl mb-2">Marketing Digital</h3>

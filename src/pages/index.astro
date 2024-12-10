@@ -11,7 +11,7 @@ import BlogAndResources from '../components/BlogAndResources.astro'
 ---
 
 <Layout title="Desarrollo Digital">
-  <div class="-bg-color-secondary border-b-2 -border-b-color-secondary">
+  <div class="-bg-color-secondary border-b-2 -border-b-color-secondary md:h-[50vh]">
     <main
       class="flex relative justify-center gap-x-4 flex-col-reverse items-center sm:flex-row xl:px-0 max-w-7xl mx-auto -text-color-primary"
     >
@@ -36,24 +36,28 @@ import BlogAndResources from '../components/BlogAndResources.astro'
       <div
         class="flex flex-col justify-center items-center sm:items-start gap-y-4 max-w-lg z-10"
       >
-        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center sm:text-left">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center sm:text-left"
+          data-aos="fade-right"
+        >
           Impulsa tu negocio con una <span class="-text-color-tertiary">Solución digital</span>
         </h1>
-        <p class="text-lg text-center sm:text-left">
-          Desarrollo Digital te ayuda a llevar tu negocio al siguiente nivel con una solución
-          digital a la medida.
+        <p class="text-lg text-pretty text-center sm:text-left" data-aos="fade-up-right">
+          Desarrollo Digital te ayuda a llevar tu negocio al siguiente nivel por medio de una
+          pagina web a la medida.
         </p>
         <a
-          class="p-4 text-xl -text-color-secondary font-medium w-fit rounded -bg-color-tertiary transition-colors hover:-bg-color-primary hover:-text-color-secondary"
+          class="p-3 text-xl -text-color-secondary font-medium w-fit rounded -bg-color-tertiary transition-colors hover:-bg-color-primary hover:-text-color-secondary"
           href="https://wa.me/573025173242"
           target="_blank"
+          data-aos="fade-up"
         >
           🚀 Cotiza tu Proyecto
         </a>
       </div>
 
       <WebDesing
-        class="min-w-72 w-1/2 h-auto -bg-color-secondary rounded-full -text-color-primary z-10"
+        class="min-w-72 w-1/2 h-auto -bg-color-secondary rounded-full -text-color-primary z-10 subeBaja md:h-[55vh]"
       />
     </main>
   </div>
@@ -62,7 +66,7 @@ import BlogAndResources from '../components/BlogAndResources.astro'
       d="M0 0v90.2C49.7 99.9 105 82 160 65c75.5-23.3 145.5-22.4 222-3 63 16 119 14 173-8 79.5-32.4 156.2-27.6 240-10 82.6 17.4 143-1 205-31.7V0H0Z"
     ></path></svg
   >
-  <div class="max-w-7xl mx-auto px-4 mt-10 sm:mt-0">
+  <div class="flex flex-col gap-y-10 max-w-7xl mx-auto px-4 mt-10 sm:mt-0">
     <Benefits />
     <Services />
     <Pricing />
@@ -72,3 +76,21 @@ import BlogAndResources from '../components/BlogAndResources.astro'
     <ContactForm />
   </div>
 </Layout>
+
+<style is:inline>
+  .subeBaja {
+    animation: sube-baja 2s infinite;
+  }
+
+  @keyframes sube-baja {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>

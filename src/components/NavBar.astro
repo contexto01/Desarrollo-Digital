@@ -16,6 +16,7 @@ const LINKS = [
   <a
     href="/"
     class="flex justify-center items-center -text-color-primary gap-x-4 h-16 text-white text-2xl"
+    data-aos="fade-up"
   >
     <LogoSinFondo class="w-8 h-8" />
     <h2>Desarrollo <span class="-text-color-tertiary">Digital</span></h2>
@@ -28,7 +29,7 @@ const LINKS = [
     <li><a href="/contact" class="text-white">Contacto</a></li> -->
     {
       LINKS.map((link) => (
-        <li>
+        <li data-aos="fade-up-right" data-aos-delay={LINKS.indexOf(link) * 50}>
           <a
             href={link.href}
             class="hover:-border-b-color-tertiary hover:border-b-2 hover:-text-color-tertiary transition-colors font-black"
