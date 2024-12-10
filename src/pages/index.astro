@@ -11,34 +11,64 @@ import BlogAndResources from '../components/BlogAndResources.astro'
 ---
 
 <Layout title="Desarrollo Digital">
-  <main
-    class="flex justify-center gap-x-4 flex-col-reverse items-center sm:flex-row mb-10 sm:mb-0 xl:px-0"
+  <div class="-bg-color-secondary">
+    <main
+      class="flex relative justify-center gap-x-4 flex-col-reverse items-center sm:flex-row xl:px-0 max-w-7xl mx-auto -text-color-primary"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 480 480"
+        fill="#0C9F4C"
+        class="absolute bottom-0 right-0 w-1/4 opacity-5"
+        ><path
+          d="M120 120h120v120H120zM0 240h120v120H0zM120 360h120v120H120zM0 0h120v120H0zM360 120h120v120H360zM240 240h120v120H240zM360 360h120v120H360zM240 0h120v120H240z"
+        ></path></svg
+      >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 480 480"
+        fill="#0C9F4C"
+        class="absolute bottom-0 left-0 w-1/4 opacity-5"
+        ><path
+          d="M120 120h120v120H120zM0 240h120v120H0zM120 360h120v120H120zM0 0h120v120H0zM360 120h120v120H360zM240 240h120v120H240zM360 360h120v120H360zM240 0h120v120H240z"
+        ></path></svg
+      >
+      <div
+        class="flex flex-col justify-center items-center sm:items-start gap-y-4 max-w-lg z-10"
+      >
+        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center sm:text-left">
+          Impulsa tu negocio con una <span class="-text-color-tertiary">Solución digital</span>
+        </h1>
+        <p class="text-lg text-center sm:text-left">
+          Desarrollo Digital te ayuda a llevar tu negocio al siguiente nivel con una solución
+          digital a la medida.
+        </p>
+        <!-- <a
+          class="p-4 text-xl -text-color-secondary font-medium w-fit rounded -bg-color-tertiary transition-colors hover:-bg-color-primary hover:-text-color-secondary"
+          href="https://wa.me/573025173242"
+          target="_blank"
+        >
+          🚀 Cotiza tu Proyecto
+        </a> -->
+      </div>
+
+      <WebDesing
+        class="min-w-72 w-1/2 h-auto -bg-color-secondary rounded-full -text-color-primary z-10"
+      />
+    </main>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#F0F0F0"
+    ><path
+      d="M0 0v90.2C49.7 99.9 105 82 160 65c75.5-23.3 145.5-22.4 222-3 63 16 119 14 173-8 79.5-32.4 156.2-27.6 240-10 82.6 17.4 143-1 205-31.7V0H0Z"
+    ></path></svg
   >
-    <div class="flex flex-col justify-center items-center sm:items-start gap-y-4 max-w-lg">
-      <h1
-        class="-text-color-secondary text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center sm:text-left"
-      >
-        Impulsa tu negocio con una <span class="-text-color-tertiary">Solución digital</span>
-      </h1>
-      <p class="-text-color-secondary text-lg text-center sm:text-left">
-        Desarrollo Digital te ayuda a llevar tu negocio al siguiente nivel con una solución
-        digital a la medida.
-      </p>
-      <a
-        class="p-4 text-xl font-medium w-fit rounded -bg-color-tertiary transition-colors hover:-bg-color-secondary hover:-text-color-primary bg-opacity-60"
-        href="https://wa.me/573025173242"
-        target="_blank"
-      >
-        Cotiza tu Proyecto
-      </a>
-    </div>
-    <WebDesing class="min-w-72 w-1/2 h-auto -text-color-primary" />
-  </main>
-  <Benefits />
-  <Services />
-  <Pricing />
-  <Projects />
-  <Questions />
-  <BlogAndResources />
-  <ContactForm />
+  <div class="max-w-7xl mx-auto">
+    <Benefits />
+    <Services />
+    <Pricing />
+    <Projects />
+    <Questions />
+    <BlogAndResources />
+    <ContactForm />
+  </div>
 </Layout>
